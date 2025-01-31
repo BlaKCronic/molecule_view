@@ -112,6 +112,89 @@ def create_molecules():
     ammonia.add_bond(0, 3)  # N-H
     molecules.append(ammonia)
 
+    # Molécula de etanol (C₂H₅OH)
+    ethanol = Molecule("Etanol (C₂H₅OH)")
+    ethanol.add_atom('C', [0.0, 0.0, 0.0])
+    ethanol.add_atom('C', [1.54, 0.0, 0.0])
+    ethanol.add_atom('O', [2.31, 0.89, 0.0])
+    ethanol.add_atom('H', [-0.51, 0.89, 0.0])
+    ethanol.add_atom('H', [-0.51, -0.89, 0.0])
+    ethanol.add_atom('H', [0.51, 0.0, 0.89])
+    ethanol.add_atom('H', [1.54, -0.89, -0.89])
+    ethanol.add_atom('H', [1.54, 0.89, -0.89])
+    ethanol.add_atom('H', [2.31, 0.89, 1.0])
+    ethanol.add_bond(0, 1)  # C-C
+    ethanol.add_bond(1, 2)  # C-O
+    ethanol.add_bond(0, 3)  # C-H
+    ethanol.add_bond(0, 4)  # C-H
+    ethanol.add_bond(0, 5)  # C-H
+    ethanol.add_bond(1, 6)  # C-H
+    ethanol.add_bond(1, 7)  # C-H
+    ethanol.add_bond(2, 8)  # O-H
+    molecules.append(ethanol)
+
+    # Molécula de ácido acético (CH₃COOH)
+    acetic_acid = Molecule("Ácido Acético (CH₃COOH)")
+    acetic_acid.add_atom('C', [0.0, 0.0, 0.0])
+    acetic_acid.add_atom('C', [1.54, 0.0, 0.0])
+    acetic_acid.add_atom('O', [2.31, 0.89, 0.0])
+    acetic_acid.add_atom('O', [2.31, -0.89, 0.0])
+    acetic_acid.add_atom('H', [-0.51, 0.89, 0.0])
+    acetic_acid.add_atom('H', [-0.51, -0.89, 0.0])
+    acetic_acid.add_atom('H', [0.51, 0.0, 0.89])
+    acetic_acid.add_atom('H', [1.54, 0.0, 1.0])
+    acetic_acid.add_bond(0, 1)  # C-C
+    acetic_acid.add_bond(1, 2)  # C-O
+    acetic_acid.add_bond(1, 3)  # C-O
+    acetic_acid.add_bond(0, 4)  # C-H
+    acetic_acid.add_bond(0, 5)  # C-H
+    acetic_acid.add_bond(0, 6)  # C-H
+    acetic_acid.add_bond(3, 7)  # O-H
+    molecules.append(acetic_acid)
+
+    # Molécula de benceno (C₆H₆)
+    benzene = Molecule("Benceno (C₆H₆)")
+    benzene.add_atom('C', [0.0, 0.0, 0.0])
+    benzene.add_atom('C', [1.39, 0.0, 0.0])
+    benzene.add_atom('C', [2.08, 1.2, 0.0])
+    benzene.add_atom('C', [1.39, 2.4, 0.0])
+    benzene.add_atom('C', [0.0, 2.4, 0.0])
+    benzene.add_atom('C', [-0.69, 1.2, 0.0])
+    benzene.add_atom('H', [-0.69, -1.2, 0.0])
+    benzene.add_atom('H', [2.08, -1.2, 0.0])
+    benzene.add_atom('H', [3.17, 1.2, 0.0])
+    benzene.add_atom('H', [1.39, 3.6, 0.0])
+    benzene.add_atom('H', [0.0, 3.6, 0.0])
+    benzene.add_atom('H', [-1.78, 1.2, 0.0])
+    benzene.add_bond(0, 1)  # C-C
+    benzene.add_bond(1, 2)  # C-C
+    benzene.add_bond(2, 3)  # C-C
+    benzene.add_bond(3, 4)  # C-C
+    benzene.add_bond(4, 5)  # C-C
+    benzene.add_bond(5, 0)  # C-C
+    benzene.add_bond(0, 6)  # C-H
+    benzene.add_bond(1, 7)  # C-H
+    benzene.add_bond(2, 8)  # C-H
+    benzene.add_bond(3, 9)  # C-H
+    benzene.add_bond(4, 10)  # C-H
+    benzene.add_bond(5, 11)  # C-H
+    molecules.append(benzene)
+
+    # Molécula de eteno (C₂H₄)
+    ethene = Molecule("Eteno (C₂H₄)")
+    ethene.add_atom('C', [0.0, 0.0, 0.0])
+    ethene.add_atom('C', [1.33, 0.0, 0.0])
+    ethene.add_atom('H', [-0.67, 0.93, 0.0])
+    ethene.add_atom('H', [-0.67, -0.93, 0.0])
+    ethene.add_atom('H', [2.0, 0.93, 0.0])
+    ethene.add_atom('H', [2.0, -0.93, 0.0])
+    ethene.add_bond(0, 1)  # C=C
+    ethene.add_bond(0, 2)  # C-H
+    ethene.add_bond(0, 3)  # C-H
+    ethene.add_bond(1, 4)  # C-H
+    ethene.add_bond(1, 5)  # C-H
+    molecules.append(ethene)
+
 # Inicializar GLUT
 glutInit()
 glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)
