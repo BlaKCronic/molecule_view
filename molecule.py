@@ -1,5 +1,6 @@
 class Molecule:
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
         self.atoms = []
         self.bonds = []
 
