@@ -195,6 +195,179 @@ def create_molecules():
     ethene.add_bond(1, 5)  # C-H
     molecules.append(ethene)
 
+    # Molécula de ácido sulfúrico (H₂SO₄)
+    sulfuric_acid = Molecule("Ácido Sulfúrico (H₂SO₄)")
+    sulfuric_acid.add_atom('S', [0.0, 0.0, 0.0])
+    sulfuric_acid.add_atom('O', [1.43, 0.0, 0.0])
+    sulfuric_acid.add_atom('O', [-1.43, 0.0, 0.0])
+    sulfuric_acid.add_atom('O', [0.0, 1.43, 0.0])
+    sulfuric_acid.add_atom('O', [0.0, -1.43, 0.0])
+    sulfuric_acid.add_atom('H', [0.0, 1.43, 1.0])
+    sulfuric_acid.add_atom('H', [0.0, -1.43, 1.0])
+    sulfuric_acid.add_bond(0, 1)  # S-O
+    sulfuric_acid.add_bond(0, 2)  # S-O
+    sulfuric_acid.add_bond(0, 3)  # S-O
+    sulfuric_acid.add_bond(0, 4)  # S-O
+    sulfuric_acid.add_bond(3, 5)  # O-H
+    sulfuric_acid.add_bond(4, 6)  # O-H
+    molecules.append(sulfuric_acid)
+
+    glucose = Molecule("Glucosa (C₆H₁₂O₆)")
+    glucose.add_atom('C', [0.0, 0.0, 0.0])
+    glucose.add_atom('C', [1.54, 0.0, 0.0])
+    glucose.add_atom('C', [2.31, 0.89, 0.0])
+    glucose.add_atom('C', [1.54, 1.78, 0.0])
+    glucose.add_atom('C', [0.0, 1.78, 0.0])
+    glucose.add_atom('C', [-0.77, 0.89, 0.0])
+    glucose.add_atom('O', [2.31, -0.89, 0.0])
+    glucose.add_atom('O', [0.0, -0.89, 0.0])
+    glucose.add_atom('O', [-0.77, 1.78, 0.0])
+    glucose.add_atom('O', [1.54, 2.67, 0.0])
+    glucose.add_atom('H', [-0.51, 0.89, 0.89])
+    glucose.add_atom('H', [-0.51, 0.89, -0.89])
+    glucose.add_atom('H', [0.51, 0.0, 0.89])
+    glucose.add_atom('H', [0.51, 0.0, -0.89])
+    glucose.add_atom('H', [1.54, -0.89, 0.89])
+    glucose.add_atom('H', [1.54, -0.89, -0.89])
+    glucose.add_atom('H', [2.31, 0.89, 0.89])
+    glucose.add_atom('H', [2.31, 0.89, -0.89])
+    glucose.add_atom('H', [1.54, 1.78, 0.89])
+    glucose.add_atom('H', [1.54, 1.78, -0.89])
+    glucose.add_atom('H', [0.0, 1.78, 0.89])
+    glucose.add_atom('H', [0.0, 1.78, -0.89])
+    glucose.add_atom('H', [-0.77, 0.89, 0.89])
+    glucose.add_atom('H', [-0.77, 0.89, -0.89])
+    glucose.add_bond(0, 1)  # C-C
+    glucose.add_bond(1, 2)  # C-C
+    glucose.add_bond(2, 3)  # C-C
+    glucose.add_bond(3, 4)  # C-C
+    glucose.add_bond(4, 5)  # C-C
+    glucose.add_bond(5, 0)  # C-C
+    glucose.add_bond(1, 6)  # C-O
+    glucose.add_bond(0, 7)  # C-O
+    glucose.add_bond(5, 8)  # C-O
+    glucose.add_bond(3, 9)  # C-O
+    molecules.append(glucose)
+
+    nacl = Molecule("Cloruro de Sodio (NaCl)")
+    nacl.add_atom('Na', [0.0, 0.0, 0.0])
+    nacl.add_atom('Cl', [2.82, 0.0, 0.0])
+    nacl.add_bond(0, 1)  # Na-Cl
+    molecules.append(nacl)
+
+    butane = Molecule("Butano (C₄H₁₀)")
+    butane.add_atom('C', [0.0, 0.0, 0.0])
+    butane.add_atom('C', [1.54, 0.0, 0.0])
+    butane.add_atom('C', [3.08, 0.0, 0.0])
+    butane.add_atom('C', [4.62, 0.0, 0.0])
+    butane.add_atom('H', [-0.51, 0.89, 0.0])
+    butane.add_atom('H', [-0.51, -0.89, 0.0])
+    butane.add_atom('H', [0.51, 0.0, 0.89])
+    butane.add_atom('H', [1.54, 0.89, 0.0])
+    butane.add_atom('H', [1.54, -0.89, 0.0])
+    butane.add_atom('H', [3.08, 0.89, 0.0])
+    butane.add_atom('H', [3.08, -0.89, 0.0])
+    butane.add_atom('H', [4.62, 0.89, 0.0])
+    butane.add_atom('H', [4.62, -0.89, 0.0])
+    butane.add_bond(0, 1)  # C-C
+    butane.add_bond(1, 2)  # C-C
+    butane.add_bond(2, 3)  # C-C
+    butane.add_bond(0, 4)  # C-H
+    butane.add_bond(0, 5)  # C-H
+    butane.add_bond(0, 6)  # C-H
+    butane.add_bond(1, 7)  # C-H
+    butane.add_bond(1, 8)  # C-H
+    butane.add_bond(2, 9)  # C-H
+    butane.add_bond(2, 10)  # C-H
+    butane.add_bond(3, 11)  # C-H
+    butane.add_bond(3, 12)  # C-H
+    molecules.append(butane)
+
+    hcl = Molecule("Ácido Clorhídrico (HCl)")
+    hcl.add_atom('H', [0.0, 0.0, 0.0])
+    hcl.add_atom('Cl', [1.27, 0.0, 0.0])
+    hcl.add_bond(0, 1)  # H-Cl
+    molecules.append(hcl)
+
+    ozone = Molecule("Ozono (O₃)")
+    ozone.add_atom('O', [0.0, 0.0, 0.0])
+    ozone.add_atom('O', [1.28, 0.0, 0.0])
+    ozone.add_atom('O', [0.64, 1.11, 0.0])
+    ozone.add_bond(0, 1)  # O-O
+    ozone.add_bond(1, 2)  # O-O
+    molecules.append(ozone)
+
+    phenol = Molecule("Fenol (C₆H₅OH)")
+    phenol.add_atom('C', [0.0, 0.0, 0.0])
+    phenol.add_atom('C', [1.39, 0.0, 0.0])
+    phenol.add_atom('C', [2.08, 1.2, 0.0])
+    phenol.add_atom('C', [1.39, 2.4, 0.0])
+    phenol.add_atom('C', [0.0, 2.4, 0.0])
+    phenol.add_atom('C', [-0.69, 1.2, 0.0])
+    phenol.add_atom('O', [0.0, -1.2, 0.0])
+    phenol.add_atom('H', [-0.69, -1.2, 0.0])
+    phenol.add_atom('H', [2.08, -1.2, 0.0])
+    phenol.add_atom('H', [3.17, 1.2, 0.0])
+    phenol.add_atom('H', [1.39, 3.6, 0.0])
+    phenol.add_atom('H', [0.0, 3.6, 0.0])
+    phenol.add_atom('H', [-1.78, 1.2, 0.0])
+    phenol.add_bond(0, 1)  # C-C
+    phenol.add_bond(1, 2)  # C-C
+    phenol.add_bond(2, 3)  # C-C
+    phenol.add_bond(3, 4)  # C-C
+    phenol.add_bond(4, 5)  # C-C
+    phenol.add_bond(5, 0)  # C-C
+    phenol.add_bond(0, 6)  # C-O
+    phenol.add_bond(6, 7)  # O-H
+    phenol.add_bond(1, 8)  # C-H
+    phenol.add_bond(2, 9)  # C-H
+    phenol.add_bond(3, 10)  # C-H
+    phenol.add_bond(4, 11)  # C-H
+    phenol.add_bond(5, 12)  # C-H
+    molecules.append(phenol)
+
+    formaldehyde = Molecule("Formaldehído (CH₂O)")
+    formaldehyde.add_atom('C', [0.0, 0.0, 0.0])
+    formaldehyde.add_atom('O', [1.21, 0.0, 0.0])
+    formaldehyde.add_atom('H', [-0.51, 0.89, 0.0])
+    formaldehyde.add_atom('H', [-0.51, -0.89, 0.0])
+    formaldehyde.add_bond(0, 1)  # C=O
+    formaldehyde.add_bond(0, 2)  # C-H
+    formaldehyde.add_bond(0, 3)  # C-H
+    molecules.append(formaldehyde)
+
+    nitric_acid = Molecule("Ácido Nítrico (HNO₃)")
+    nitric_acid.add_atom('N', [0.0, 0.0, 0.0])
+    nitric_acid.add_atom('O', [1.21, 0.0, 0.0])
+    nitric_acid.add_atom('O', [0.0, 1.21, 0.0])
+    nitric_acid.add_atom('O', [0.0, -1.21, 0.0])
+    nitric_acid.add_atom('H', [0.0, 1.21, 1.0])
+    nitric_acid.add_bond(0, 1)  # N=O
+    nitric_acid.add_bond(0, 2)  # N-O
+    nitric_acid.add_bond(0, 3)  # N-O
+    nitric_acid.add_bond(2, 4)  # O-H
+    molecules.append(nitric_acid)
+
+    acetone = Molecule("Acetona (C₃H₆O)")
+    acetone.add_atom('C', [0.0, 0.0, 0.0])
+    acetone.add_atom('C', [1.54, 0.0, 0.0])
+    acetone.add_atom('C', [3.08, 0.0, 0.0])
+    acetone.add_atom('O', [1.54, 1.21, 0.0])
+    acetone.add_atom('H', [-0.51, 0.89, 0.0])
+    acetone.add_atom('H', [-0.51, -0.89, 0.0])
+    acetone.add_atom('H', [0.51, 0.0, 0.89])
+    acetone.add_atom('H', [3.08, 0.89, 0.0])
+    acetone.add_atom('H', [3.08, -0.89, 0.0])
+    acetone.add_bond(0, 1)  # C-C
+    acetone.add_bond(1, 2)  # C-C
+    acetone.add_bond(1, 3)  # C=O
+    acetone.add_bond(0, 4)  # C-H
+    acetone.add_bond(0, 5)  # C-H
+    acetone.add_bond(0, 6)  # C-H
+    acetone.add_bond(2, 7)  # C-H
+    acetone.add_bond(2, 8)  # C-H
+    molecules.append(acetone)
+
 # Inicializar GLUT
 glutInit()
 glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)
